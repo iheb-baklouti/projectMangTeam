@@ -1,0 +1,35 @@
+.pitch {
+
+
+    position: relative;
+  width: 100%;
+  max-width: 600px; /* ou moins, selon ce que tu veux */
+  margin: 0 auto;
+  padding-top: 100%; /* Réduit la hauteur du terrain */
+ background: url('../../images/football-field.png') center/cover no-repeat;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); /* Modern look */
+}
+
+.player-icon {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  background-color: #dc2626;
+  color: white;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 12px;
+  transition: top 0.5s ease, left 0.5s ease;
+  text-align: center;
+  padding: 2px;
+}
+
+.animate-position {
+  transition: top 0.5s ease, left 0.5s ease;
+}
